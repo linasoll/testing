@@ -26,13 +26,13 @@ export function whatSystem(cardNumber) {
     }
 
     if (first === "6") {
-        mastercard.classList.remove("inactive");
+        unionpay.classList.remove("inactive");
         unionpay.classList.add("active");
         system.textContent = "UnionPay"
     }
 
     if (first === "2" && second === "2") {
-        mastercard.classList.remove("inactive");
+        mir.classList.remove("inactive");
         mir.classList.add("active");
         system.textContent = "Мир"
     }
