@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 h1 {
     color:rgb(26, 26, 86);
     margin-top: 60px;
@@ -100,4 +104,18 @@ h1 {
 
 .inactive {
     opacity: 50%;
+}
+
+.message.invisible {
+    display: none;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px
 }
