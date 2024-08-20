@@ -16,6 +16,7 @@ form.addEventListener('submit', (e) => {
         whatSystem(cardNumber);
         success.classList.remove("invisible")
         error.classList.add("invisible")
+        errLen.classList.add("invisible")
     }
     if (!validate) {
         systemsList.forEach(card => {
