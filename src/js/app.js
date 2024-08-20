@@ -24,8 +24,8 @@ form.addEventListener('submit', (e) => {
         })
 
         if (!errLen.classList.contains("invisible")) {
-            error.classList.remove("invisible")
-        success.classList.add("invisible")
+            error.classList.add("invisible")
+            success.classList.add("invisible")
         }
     }
 })
