@@ -6,7 +6,7 @@ const success = document.getElementById("success");
 const error = document.getElementById("error");
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault;
+    e.preventDefault();
     const input = document.getElementById("input");
     const cardNumber = input.value;
     const validate = validateCard(cardNumber);
