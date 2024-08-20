@@ -19,6 +19,11 @@ form.addEventListener('submit', (e) => {
         errLen.classList.add("invisible")
     }
     if (!validate) {
+        if (!errLen.classList.contains("invisible")) {
+            error.classList.add("invisible")
+            success.classList.add("invisible")
+        } 
+        
         systemsList.forEach(card => {
             card.classList.remove("active");
             card.classList.add("inactive");
@@ -26,10 +31,5 @@ form.addEventListener('submit', (e) => {
             error.classList.remove("invisible")
             errLen.classList.add("invisible")
         })
-
-        if (!errLen.classList.contains("invisible")) {
-            error.classList.add("invisible")
-            success.classList.add("invisible")
-        }
     }
 })
