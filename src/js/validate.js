@@ -1,4 +1,4 @@
-export default function validateCard(cardNumber) {
+export function validateCard(cardNumber) {
     const cardNumberString = cardNumber.toString();
     let sum = 0;
 
