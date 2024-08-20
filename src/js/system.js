@@ -12,7 +12,7 @@ export function whatSystem(cardNumber) {
     const active = document.querySelector(".active")
     if (active && previousActive) {
          active.classList.remove("active");
-         previousActive.classList.add("inactive")
+         active.classList.add("inactive")
     }
 
     if (first === "4") {
@@ -38,6 +38,4 @@ export function whatSystem(cardNumber) {
         mir.classList.add("active");
         system.textContent = "Мир"
     }
-
-    previousActive = active
 }
