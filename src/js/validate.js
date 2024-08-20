@@ -4,7 +4,7 @@ export function validateCard(cardNumber) {
 
     if (cardNumber.length !== 16) {
         errLen.classList.remove("invisible");
-        return false
+        return
     }
 
     for (let i=0; i<cardNumber.length; i++) {

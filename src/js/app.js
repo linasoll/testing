@@ -18,12 +18,14 @@ form.addEventListener('submit', (e) => {
         error.classList.add("invisible")
         errLen.classList.add("invisible")
     }
-    if (!validate) {
-        if (!errLen.classList.contains("invisible")) {
-            error.classList.add("invisible")
-            success.classList.add("invisible")
-        } 
-        
+    
+    if (!errLen.classList.contains("invisible")) {
+        error.classList.add("invisible")
+        success.classList.add("invisible")
+    } 
+
+
+    if (validate === false) {
         systemsList.forEach(card => {
             card.classList.remove("active");
             card.classList.add("inactive");
