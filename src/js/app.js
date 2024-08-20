@@ -13,8 +13,10 @@ form.addEventListener('submit', (e) => {
     if (validate) {
         whatSystem(cardNumber);
         success.classList.remove("invisible")
+        error.classList.add("invisible")
     }
     if (!validate) {
         error.classList.remove("invisible")
+        success.classList.add("invisible")
     }
 })
