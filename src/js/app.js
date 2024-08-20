@@ -1,7 +1,8 @@
 import { validateCard } from "./validate.js"
 
 const form = document.getElementById("validate-form");
-const cardNumber = document.getElementById("input").value;
+const input = document.getElementById("input");
+const cardNumber = input.value;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault;

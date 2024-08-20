@@ -4,7 +4,6 @@ export function validateCard(cardNumber) {
 
     if (cardNumberString.length !== 16) {
         alert("Неверная длина номера");
-        return false
     }
 
     for (let i=0; i<cardNumberString.length; i++) {
