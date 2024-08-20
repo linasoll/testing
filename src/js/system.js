@@ -2,7 +2,6 @@ const visa = document.querySelector(".visa")
 const mir = document.querySelector(".mir")
 const mastercard = document.querySelector(".mastercard")
 const unionpay = document.querySelector(".unionpay")
-let previousActive = null;
 
 export function whatSystem(cardNumber) {
     const first = cardNumber[0];
@@ -10,7 +9,7 @@ export function whatSystem(cardNumber) {
     const system = document.getElementById("system");
 
     const active = document.querySelector(".active")
-    if (active && previousActive) {
+    if (active) {
          active.classList.remove("active");
          active.classList.add("inactive")
     }

@@ -17,7 +17,8 @@
     "@babel/preset-env": "^7.25.3",
     "@eslint/js": "^9.9.0",
     "eslint": "^9.9.0",
-    "globals": "^15.9.0"
+    "globals": "^15.9.0",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "core-js": "^3.38.1",
