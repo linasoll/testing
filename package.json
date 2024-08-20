@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --run-with-no-tests",
+    "test": "jest ",
     "lint": "eslint .",
     "build": "webpack --mode production"
   },
