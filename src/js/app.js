@@ -1,11 +1,11 @@
 import { validateCard } from "./validate.js"
 
 const form = document.getElementById("validate-form");
-const input = document.getElementById("input");
-const cardNumber = input.textContent;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault;
+    const input = document.getElementById("input");
+    const cardNumber = input.value;
     const validate = validateCard(cardNumber);
     if (validate) {
         alert("Карта прошла валидацию")
