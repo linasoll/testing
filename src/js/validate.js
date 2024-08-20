@@ -1,8 +1,10 @@
 export function validateCard(cardNumber) {
+    const errLen = document.querySelector("#err");
     let sum = 0;
 
     if (cardNumber.length !== 16) {
-        alert("Неверная длина номера");
+        errLen.classList.remove("invisible");
+        return false
     }
 
     for (let i=0; i<cardNumber.length; i++) {
