@@ -22,6 +22,8 @@ form.addEventListener('submit', (e) => {
         systemsList.forEach(card => {
             card.classList.remove("active");
             card.classList.add("inactive");
+            success.classList.add("invisible")
+            error.classList.remove("invisible")
             errLen.classList.add("invisible")
         })
 
