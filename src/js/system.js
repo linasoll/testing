@@ -2,6 +2,7 @@ const visa = document.querySelector(".visa")
 const mir = document.querySelector(".mir")
 const mastercard = document.querySelector(".mastercard")
 const unionpay = document.querySelector(".unionpay")
+let previousActive = null;
 
 export function whatSystem(cardNumber) {
     const first = cardNumber[0];
@@ -9,14 +10,15 @@ export function whatSystem(cardNumber) {
     const system = document.getElementById("system");
 
     const active = document.querySelector(".active")
-    if (active) {
+    if (active && previousActive) {
          active.classList.remove("active");
+         previousActive.classList.add("inactive")
     }
 
     if (first === "4") {
         visa.classList.remove("inactive");
         visa.classList.add("active");
-        system.textContent = "Visa"
+        system.textContent = "Visa";
     }
 
     if (first === "5") {
@@ -36,4 +38,6 @@ export function whatSystem(cardNumber) {
         mir.classList.add("active");
         system.textContent = "Мир"
     }
+
+    previousActive = active
 }
