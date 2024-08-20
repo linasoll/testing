@@ -2,7 +2,7 @@ import { validateCard } from "./validate.js"
 
 const form = document.getElementById("validate-form");
 const input = document.getElementById("input");
-const cardNumber = input.value;
+const cardNumber = input.textContent;
 
 form.addEventListener('submit', (e) => {
     e.preventDefault;
