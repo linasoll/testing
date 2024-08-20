@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Валидация карты</title>
+        <link rel="stylesheet" href="src/css/style.css" />
+    </head>
+    <body>
+        <h1>Проверка номера банковской карты</h1>
+        <div class="system-list">
+            <div class="card-system visa"></div>
+            <div class="card-system mastercard"></div>
+            <div class="card-system mir"></div>
+            <div class="card-system unionpay"></div>
+        </div>
+        <form class="form" id="validate-form">
+            <input class="input" type="text" placeholder="Номер карты" required>
+            <button type="submit" class="button" id="validate-button">Проверить</button>
+        </form>
+        <script src="src/js/validate.js"></script>
+        <script src="src/js/system.js"></script>
+    </body>
+</html>

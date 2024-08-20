@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color:rgb(26, 26, 86);
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.system-list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.card-system {
+    width: 60px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.visa {
+    background-image: url('/src/images/visa.png');
+}
+
+.mir {
+    background-image: url('/src/images/mir.png');
+}
+
+.unionpay {
+    background-image: url('/src/images/unionpay.png');
+}
+
+.mastercard {
+    background-image: url('/src/images/mastercard.png');
+}
+
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    display: flex;
+    gap: 1%;
+}
+
+.input {
+    width: 66%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.button {
+    height: 30px;
+    width: 33%;
+}
