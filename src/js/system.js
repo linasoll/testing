@@ -7,8 +7,10 @@ export function whatSystem(cardNumber) {
     const first = cardNumber[0];
     const second = cardNumber[1]
 
-    let active = document.querySelector(".active")
-    active.classList.remove("active");
+    const active = document.querySelector(".active")
+    if (active) {
+         active.classList.remove("active");
+    }
 
     if (first === "4") {
         visa.classList.remove("inactive");
