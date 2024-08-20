@@ -1,5 +1,5 @@
 export function validateCard(cardNumber) {
-    const errLen = document.querySelector("#err");
+    const errLen = document.getElementById("err");
     let sum = 0;
 
     if (cardNumber.length !== 16) {
