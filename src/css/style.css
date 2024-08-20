@@ -1,4 +1,6 @@
 body {
+    -moz-appearance: none;
+    -webkit-appearance: none;
     margin: 0;
     padding: 0;
 }
@@ -29,19 +31,32 @@ h1 {
 }
 
 .visa {
-    background-image: url('/src/images/visa.png');
+    background-image: url('../images/visa.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mir {
-    background-image: url('/src/images/mir.png');
+    background-image: url('../images/mir.png');
+    background-color: rgb(241, 241, 241);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .unionpay {
-    background-image: url('/src/images/unionpay.png');
+    background-image: url('../images/unionpay.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mastercard {
-    background-image: url('/src/images/mastercard.png');
+    background-image: url('../images/mastercard.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form {
@@ -53,12 +68,35 @@ h1 {
 }
 
 .input {
+    font-size: 14px;
     width: 66%;
     height: 30px;
     box-sizing: border-box;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 3px;
 }
 
 .button {
+    font-size: 14px;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(55, 55, 145);
     height: 30px;
     width: 33%;
+}
+
+.button:hover {
+    background-color: rgb(67, 67, 164);
+}
+
+.button:active {
+    background-color: rgb(67, 67, 164);
+    box-shadow: inset 0px 0px 10px 5px rgb(55, 55, 145);
+}
+
+.input:focus {
+    border: 0;
+    outline: 1px solid rgb(55, 55, 145);
+    outline-offset: -1px;
 }
