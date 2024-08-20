@@ -1,4 +1,4 @@
-import { validateCard } from "./validate";
+import { validateCard } from "./validate.js";
 
 const form = document.getElementById("validate-form");
 const cardNumber = document.getElementById("input").value;
